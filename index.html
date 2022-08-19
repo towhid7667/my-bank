@@ -5,10 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Wallet</title>
 </head>
 
 <body>
+    <header>
+        <h1 class="text-center text-5xl mt-4"><span class="text-blue-400 font-medium">My Bank</span> Functional</h1>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-purple-300 p-8 rounded-lg">
+                    <h4 class="text-3xl">Deposit</h1>
+                        <h2 class="text-5xl font-medium"><span id="deposit-total">00</span>৳</h2>
+                </div>
+                <div class="bg-red-300 p-8 rounded-lg">
+                    <h4 class="text-3xl">Withdraw</h1>
+                        <h2 class="text-5xl font-medium"><span id="withdraw-total">00</span>৳</h2>
+                </div>
+                <div class="bg-blue-300 p-8 rounded-lg">
+                    <h4 class="text-3xl">Balance</h1>
+                        <h2 class="text-5xl font-medium"><span id="balance-total">00</span>৳</h2>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-8 w-3/4 mx-auto">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-violet-500 p-8 rounded-lg">
+                    <h3 class="text-4xl mb-4 text-white font-medium">Your Deposit</h3>
+                    <input type="number" class="w-3/4 px-4 py-3 rounded-lg block" placeholder="Your Amount">
+                    <button id="btn-deposite"
+                        class="bg-blue-800 px-6 py-3 rounded-lg text-white font-medium mt-4 hover:bg-sky-500">Deposit</button>
+                </div>
+                <div class="bg-amber-500 p-8 rounded-lg">
+                    <h3 class="text-4xl mb-4 text-white font-medium">Your Withdrawal</h3>
+                    <input type="number" class="w-3/4 px-4 py-3 rounded-lg block" placeholder="Your Amount">
+                    <button id="btn-deposite"
+                        class="bg-green-800 px-6 py-3 rounded-lg text-white font-medium mt-4 hover:bg-sky-500">Deposit</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 
