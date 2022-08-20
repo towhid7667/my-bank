@@ -16,4 +16,6 @@ document.getElementById('btn-withdraw').addEventListener('click', function () {
     let previousBalanceAmount = parseFloat(previousBalanceAmountString);
     let currentBalanceTotal = previousBalanceAmount - newWithdrawAmount;
     previousBalanceElement.innerText = currentBalanceTotal;
+
+    newWithdrawElement.value = '';
 })

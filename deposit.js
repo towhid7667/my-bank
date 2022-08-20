@@ -20,5 +20,8 @@ document.getElementById('btn-deposit').addEventListener('click', function () {
     previousBalanceElement.innerText = currentBalanceTotal;
 
 
+    newdepositElement.value = '';
+
+
 
 })
