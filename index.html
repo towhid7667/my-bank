@@ -15,35 +15,42 @@
     </header>
     <main>
         <section class="mt-8">
-            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+            <div class="grid grid-cols-3 gap-4 w-11/12 md:w-10/12 lg:w-9/12 mx-auto text-white">
                 <div class="bg-purple-300 p-8 rounded-lg">
-                    <h4 class="text-3xl">Deposit</h1>
-                        <h2 class="text-5xl font-medium"><span id="deposit-total">00</span>৳</h2>
+                    <h4 class="lg:text-3xl md:text-2xl text-1xl font-medium">Deposit</h1>
+                        <h2 class="lg:text-5xl md:text-3xl text-2xl font-medium"><span id="deposit-total"
+                                class="flex flex-wrap ">00</span>৳
+                        </h2>
                 </div>
                 <div class="bg-red-300 p-8 rounded-lg">
-                    <h4 class="text-3xl">Withdraw</h1>
-                        <h2 class="text-5xl font-medium"><span id="withdraw-total">00</span>৳</h2>
+                    <h4 class="lg:text-3xl md:text-2xl text-1xl font-medium">Withdraw</h1>
+                        <h2 class="lg:text-5xl md:text-3xl text-2xl font-medium"><span id="withdraw-total"
+                                class="flex flex-wrap ">00</span>৳
+                        </h2>
                 </div>
                 <div class="bg-blue-300 p-8 rounded-lg">
-                    <h4 class="text-3xl">Balance</h1>
-                        <h2 class="text-5xl font-medium"><span id="balance-total">1200</span>৳</h2>
+                    <h4 class="lg:text-3xl md:text-2xl text-1xl font-medium">Balance</h1>
+                        <h2 class="lg:text-5xl md:text-3xl text-2xl font-medium"><span id="balance-total"
+                                class="flex flex-wrap ">1200</span>৳
+                        </h2>
                 </div>
 
             </div>
         </section>
-        <section class="mt-8 w-3/4 mx-auto">
+        <section class="mt-8 w-11/12 md:w-10/12 lg:w-9/12 mx-auto">
             <div class="grid grid-cols-2 gap-4">
                 <div class="bg-violet-500 p-8 rounded-lg">
-                    <h3 class="text-4xl mb-4 text-white font-medium">Your Deposit</h3>
-                    <input type="number" class="w-3/4 px-4 py-3 rounded-lg block" id="deposit-field"
-                        placeholder="Your Amount">
+                    <h3 class="lg:text-4xl md:text-3xl text-1xl mb-4 text-white font-medium">Your Deposit</h3>
+                    <input type="number" class=" p-4 w-full md:w-10/12 lg:w-9/12 mb-4 block  rounded-xl"
+                        id="deposit-field" placeholder="Your Amount">
                     <button id="btn-deposit"
                         class="bg-blue-800 px-6 py-3 rounded-lg text-white font-medium mt-4 hover:bg-sky-500">Deposit</button>
                 </div>
                 <div class="bg-amber-500 p-8 rounded-lg">
-                    <h3 class="text-4xl mb-4 text-white font-medium">Your Withdrawal</h3>
-                    <input type="number" class="w-3/4 px-4 py-3 rounded-lg block" placeholder="Your Amount">
-                    <button id="btn-deposite"
+                    <h3 class="lg:text-4xl md:text-3xl text-1xl mb-4 text-white font-medium">Your Withdrawal</h3>
+                    <input type="number" class=" p-4 w-full md:w-10/12 lg:w-9/12 mb-4 rounded-xl block"
+                        id="withdraw-field" placeholder="Your Amount">
+                    <button id="btn-withdraw"
                         class="bg-green-800 px-6 py-3 rounded-lg text-white font-medium mt-4 hover:bg-sky-500">Deposit</button>
                 </div>
             </div>
@@ -51,6 +58,7 @@
     </main>
 
     <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
 
 </body>
 
